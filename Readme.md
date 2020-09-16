@@ -24,6 +24,7 @@ Set ANSIBLE_LIBRARY environment variable pointing to directory containing module
 
 _example_
 ```
+## gather_db_stats.yml
 ---
 
 - hosts: localhost
