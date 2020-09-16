@@ -9,7 +9,7 @@ This ansible module gather database stats for given database.
 This module needs python 3.6 or higher.
 
 If ansible on your machine uses python 2. Install python 3 and set following in your inventory file
-_example - /etc/ansible/hosts
+_example - /etc/ansible/hosts_
 ```
 localhost ansible_host=localhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3
 ```
