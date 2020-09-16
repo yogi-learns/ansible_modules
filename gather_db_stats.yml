@@ -1,0 +1,23 @@
+---
+
+- hosts: localhost
+  vars:
+    hostname: localhost
+    user: sys
+    password: K2ypton55
+    mode: sysdba
+    db_port: 1521
+    service_name: orclpdb1
+    oracle_env:
+      ORACLE_HOME: /opt/oracle/product/19c/dbhome_1
+      LD_LIBRARY_PATH: /opt/oracle/product/19c/dbhome_1/lib
+  tasks:
+    - name: Gather database stats in pdb orclpdb1
+      oracle_gather_stats:
+        hostname: "{{ hostname }}"
+        user: "{{ user }}"
+        password: "{{ password }}"
+        mode: "{{ mode }}"
+        db_port: "{{ db_port }}"
+        service_name: "{{ service_name }}"
+      environment: "{{ oracle_env }}"
