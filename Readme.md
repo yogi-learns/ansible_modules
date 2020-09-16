@@ -4,6 +4,16 @@ This repository contains custom ansible modules that serve a specific purpose
 ## oracle_gather_stats
 This ansible module gather database stats for given database.
 
+### Dependency
+
+This module needs python 3.6 or higher.
+
+If ansible on your machine uses python 2. Install python 3 and set following in your inventory file
+_example - /etc/ansible/hosts
+```
+localhost ansible_host=localhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3
+```
+
 ### Usage
 
 * Clone this repository and import this module
