@@ -31,7 +31,7 @@ _example_
   vars:
     hostname: localhost
     user: sys
-    password: K2ypton55
+    password: XXXXXX
     mode: sysdba
     db_port: 1521
     service_name: orclpdb1
