@@ -54,6 +54,11 @@ _example_
 ```
 ansible-playbook gather_db_stats.yml
 ```
+
+### Module doc
+```
+ansible-doc -t module oracle_gather_stats.py
+```
 ### References
 * https://docs.ansible.com/ansible/2.4/dev_guide/developing_modules_general.html
 * https://docs.ansible.com/ansible/latest/dev_guide/developing_locally.html
