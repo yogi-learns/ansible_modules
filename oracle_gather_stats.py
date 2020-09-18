@@ -142,7 +142,6 @@ def main():
 
     gather_stats_func()    
 
-    connection.commit()
     connection.close()
     module.exit_json(msg=msg, changed=True)
 
