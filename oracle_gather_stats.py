@@ -130,7 +130,7 @@ def main():
                 connect = dsn
                 connection = cx_Oracle.connect(user, password, dsn)
         elif (not(user) or not(password) or not(service_name)):
-            module.fail_jsaon(msg='Missing username or password or service_name for cx_Oracle')
+            module.fail_json(msg='Missing username or password or service_name for cx_Oracle')
             
     except cx_Oracle.DatabaseErrors as exc:
         error, = exc.args
